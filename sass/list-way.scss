@@ -1,0 +1,157 @@
+*{
+    // start at the very top
+    padding: 0;
+    margin: 0;
+    // Changes the default values of ALL li and a
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url("../img/background.png");
+    
+    
+   nav{
+       background-color: #C55394;
+    // To stick it to the top   
+       height: 50px;
+       width: 100%;
+
+       .logo{
+            color: #FFF;
+            font-size: 20px;
+            line-height: 40px;
+            padding: 10px 15px;
+            font-family: 'Courgette', cursive;
+
+       }
+       ul{
+           float: right;
+           margin-right: 20px;
+           li{
+
+               display: inline-block; //align li in rows instead of column
+               line-height: 48px;
+               
+                &.active,&:hover{
+                   background: #EB43A3;
+                   transition: .5s;
+                   margin: 0 3px;
+                  //.active permanently changed his background. The rest will only on hover  
+                 }
+
+                    a{
+                        color: #FFF;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                     }
+           }
+
+       }
+   }
+
+
+   .title{
+        background: url("../img/rainbow.png");
+       background-repeat: no-repeat;
+       background-position: center;
+    
+       background-size: 400px 170px;// Our image file had to fit into our <div>. It's used to rotate rainbow.png
+       line-height: 12em;
+       text-align: center;      
+       margin-top: 20px; 
+       color: #C55394;
+       font-family: 'Courgette', cursive;
+   }
+
+   .big-div{
+    // .big-div contains all our <main> part
+       width: 70%;
+       min-height: 150vh;
+       margin: 0 auto;
+        .content{
+            // the <div> that contains all visible part of the <main>
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 20px; //0: offset-x; 0: offset-y; 20px: blur-radius
+            
+            h2{
+                padding-top: 40px;
+                padding-bottom: 20px;
+                margin: 0 10px;
+                font-family: 'Courgette', cursive;
+                color: #EB43A3;
+                font-weight: lighter; //this value differs <h2> from <h3>
+                
+            }
+            figure{
+                display: inline-block;
+                figcaption{
+                    margin-top: -20px;
+                    text-align: center;
+                    color: #FFF;
+                    position:relative;
+                    background-color: rgba(51, 51, 51, 0.92); //the last value is for opacity (0 => 1)     
+                }
+            }
+            table{               
+                border-collapse: separate;
+                border-spacing: 10px 0;
+                tr td{
+                   padding: 10px; 
+                   h3{
+                    margin-top: 30px;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+                    font-family: 'Courgette', cursive;
+                    color: #EB43A3;
+                    
+                }
+
+                }
+            }
+            .register{
+                .input{
+                    width: 50%;
+                    height: 38px; 
+                    margin-top: 10px; 
+                    padding: 10px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                .btn{
+                    margin-top: 10px;
+                    width: 21%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: #EB43A3;
+                    color: #FFF;
+
+                }
+            }
+            
+ 
+    }
+   }
+   // Usual setting for sticky footer
+   #footer {
+    
+    background-color: #C55394;
+    position: sticky;
+    height: 40px;
+        p{
+        float: right;
+        margin: 10px 20px;
+        color: #FFF;
+        
+    }
+    
+    
+}
+
+
+}

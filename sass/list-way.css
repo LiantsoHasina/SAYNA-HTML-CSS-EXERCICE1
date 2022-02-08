@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/background.png");
+}
+
+body nav {
+  background-color: #C55394;
+  height: 50px;
+  width: 100%;
+}
+
+body nav .logo {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 10px 15px;
+  font-family: 'Courgette', cursive;
+}
+
+body nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+body nav ul li {
+  display: inline-block;
+  line-height: 48px;
+}
+
+body nav ul li.active, body nav ul li:hover {
+  background: #EB43A3;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0 3px;
+}
+
+body nav ul li a {
+  color: #FFF;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+body .title {
+  background: url("../img/rainbow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 170px;
+  line-height: 12em;
+  text-align: center;
+  margin-top: 20px;
+  color: #C55394;
+  font-family: 'Courgette', cursive;
+}
+
+body .big-div {
+  width: 70%;
+  min-height: 150vh;
+  margin: 0 auto;
+}
+
+body .big-div .content {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+}
+
+body .big-div .content h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin: 0 10px;
+  font-family: 'Courgette', cursive;
+  color: #EB43A3;
+  font-weight: lighter;
+}
+
+body .big-div .content figure {
+  display: inline-block;
+}
+
+body .big-div .content figure figcaption {
+  margin-top: -20px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  background-color: rgba(51, 51, 51, 0.92);
+}
+
+body .big-div .content table {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+body .big-div .content table tr td {
+  padding: 10px;
+}
+
+body .big-div .content table tr td h3 {
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Courgette', cursive;
+  color: #EB43A3;
+}
+
+body .big-div .content .register .input {
+  width: 50%;
+  height: 38px;
+  margin-top: 10px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body .big-div .content .register .btn {
+  margin-top: 10px;
+  width: 21%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: #EB43A3;
+  color: #FFF;
+}
+
+body #footer {
+  background-color: #C55394;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 40px;
+}
+
+body #footer p {
+  float: right;
+  margin: 10px 20px;
+  color: #FFF;
+}
+/*# sourceMappingURL=list-way.css.map */
