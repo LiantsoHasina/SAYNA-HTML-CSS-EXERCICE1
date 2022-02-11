@@ -1,131 +1,131 @@
 <!-- 
     Page under developpement. Not responsive yet. Should I say : There is (still) No Responsiveness at all.
-    Screen under 1920x1080 will not display properly
     Imporvements are on their way 
  -->
-
  <!-- 
      Project done with sass(.scss), the extension is needed for edit
   -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- load google maps -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <!-- load font-awesome - online link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- load Courgette font - online link -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Supermercado+One&display=swap" rel="stylesheet">
-<!-- set titlebar icon -->
-    <link rel="shorcut icon" type="image" href="img/title.jpg">
-<!-- load css file -->
-    <link rel="stylesheet" href="sass/list-way.css">
-    <title>MyUnicorn</title>
-</head>
-<body>
-
-    <!-- 
-        separated into 3 parts: 
-            - header
-            - main
-            - footer
-     -->
-    <header>
-        <!-- setting the navbar -->
-        <nav>
-            <label class="logo">MyUnicorn</label> 
-            <!-- I choose to create the menu from list -->
-            <ul>
-             <li class="active"><a href="#principe">Le principe</a></li>
-             <li><a href="#images">nos licorne</a></li>
-             <li><a href="#location">nous trouver</a></li>
-         </ul>
-        </nav>
-        
-
-        <div class="title"><h1>Un jour, une licorne</h1></div>
-        
-    </header>
-    
-     <main>
-
-        <div class="big-div"> 
-            <!-- .blue is invisible. Used to center and limit .content -->
-         
-            <div class="content">
-
-                <!-- 
-                    <i></i>:calling for font-awesome
-                 -->
-                <h2 id="principe"><i class="far fa-star"></i> Le principe</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
-                        <br>
-                    <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
-                
-               <h2 id="images"><i class="far fa-star"></i> Nos licornes</h2>
-                   
-                    <figure>
-                        <img src="img/unicorns/photo1.jpg" alt="can't load Lulu Confetty">
-                        <figcaption>Lulu Confetty</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/unicorns/photo2.jpg" alt="can't load Lapillon Magik">
-                        <figcaption>Lapillon Magik</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/unicorns/photo3.jpg" alt="can't load El Ninjacorn">
-                        <figcaption>El Ninjacorn</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/unicorns/photo4.jpg" alt="can't load Sweety Candy">
-                        <figcaption>Sweety Candy</figcaption>
-                    </figure>
-                    
-                <h2 id="location"><i class="far fa-star"></i> Nous trouver</h2>
-                
-    <!-- 
-        We used <table> for our side by side menu
-            1 rows, 1 columns
-     -->
-                    <table>
-                        <tr>
-                            <td>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.535292011776!2d47.52404341542115!3d-18.90768621221584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e00bfe681a5%3A0x4c1b3b6f62c45fa2!2sAnalakely%20Market!5e0!3m2!1sen!2smg!4v1643879740449!5m2!1sen!2smg" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy">
-                    
-                                </iframe>
-                            </td>
-                            
-                            <td class="info">
-                                
-                                <h3>Notre élevage de licornes est situé au :</h3>
-                                    <p>
-                                        Analakely Market <br>
-                                        Arabe Rahezavana, Antananarivo, Madagascar <br>
-                                        01.22.45.67.90
-                                    </p>
-                                <h3>Newsletter</h3>
-                                    <div class="register">
-                                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
-                                    <input type="text" value="votre@email.fr" class="input"><br>
-                                    <button type="button" class="btn">Valider</button>
-                                    </div>
-                                    
-    
-                            </td>
-                        </tr>
-    
-                    </table>
-            </div>
-    
-         </div>
-
-     </main>
-  <footer id="footer">
-    <p>2016 © WebForce3</p>  
-  </footer>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- load google maps -->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <!-- load font-awesome - online link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <!-- load Courgette font - online link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Supermercado+One&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="sass/fonts/fonts.css"> -->
+  <!-- set titlebar icon -->
+      <link rel="shorcut icon" type="image" href="img/title.jpg">
+  <!-- load css file -->
+      <link rel="stylesheet" href="sass/list-way.css">
+      <title>MyUnicorn</title>
+  </head>
+  <body>
+  
+      <!-- 
+          separated into 3 parts: 
+              - header
+              - main
+              - footer
+       -->
+      <header>
+          <!-- setting the navbar -->
+          <nav>
+              <a href="list-way.html"><label class="logo"> MyUnicorn</label></a>
+              <!-- I choose to create the menu from list -->
+              <ul>
+               <li class="active"><a href="#principe">Le principe</a></li>
+               <li><a href="#images">nos licorne</a></li>
+               <li><a href="#location">nous trouver</a></li>
+           </ul>
+          </nav>
+          
+  
+          <div class="title"><h1>Un jour, une licorne</h1></div>
+          
+      </header>
+      
+       <main>
+  
+          <div class="big-div"> 
+              <!-- .big-div is invisible. Used to center and limit .content -->
+           
+              <div class="content">
+  
+                  <!-- 
+                      <i></i>:calling for font-awesome
+                   -->
+                  <h2 id="principe"><i class="fa fa-star-o"></i> Le principe</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                          <br>
+                      <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+                  
+                 <h2><i class="fa fa-star-o"></i> Nos licornes</h2>
+                     
+                      <figure>
+                          <img src="img/unicorns/photo1.jpg" alt="can't load Lulu Confetty">
+                          <figcaption>Lulu Confetty</figcaption>
+                      </figure>
+                      <figure>
+                          <img src="img/unicorns/photo2.jpg" alt="can't load Lapillon Magik">
+                          <figcaption>Lapillon Magik</figcaption>
+                      </figure>
+                      <figure>
+                          <img src="img/unicorns/photo3.jpg" alt="can't load El Ninjacorn">
+                          <figcaption>El Ninjacorn</figcaption>
+                      </figure>
+                      <figure>
+                          <img src="img/unicorns/photo4.jpg" alt="can't load Sweety Candy">
+                          <figcaption>Sweety Candy</figcaption>
+                      </figure>
+                      
+                  <h2 id="location"><i class="fa fa-star-o"></i> Nous trouver</h2>
+                  
+      <!-- 
+          We used <table> for our side by side menu
+              1 rows, 1 columns
+       -->
+                      <table>
+                          <tr>
+                              <td>
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.535292011776!2d47.52404341542115!3d-18.90768621221584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e00bfe681a5%3A0x4c1b3b6f62c45fa2!2sAnalakely%20Market!5e0!3m2!1sen!2smg!4v1643879740449!5m2!1sen!2smg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                      
+                                  </iframe>
+                              </td>
+                              
+                              <td class="info">
+                                  
+                                  <h3>Notre élevage de licornes est situé au :</h3>
+                                      <p>
+                                          Analakely Market <br>
+                                          Arabe Rahezavana, Antananarivo, Madagascar <br>
+                                          01.22.45.67.90
+                                      </p>
+                                  <h3>Newsletter</h3>
+                                      <div class="register">
+                                          <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                                      <input type="text" placeholder="votre@email.fr" class="input"><br>
+                                      <button type="button" class="btn">Valider</button>
+                                      </div>
+                                      
+      
+                              </td>
+                          </tr>
+      
+                      </table>
+              </div>
+      
+           </div>
+  
+       </main>
+    <footer>
+      <p>2016 © WebForce3</p>  
+    </footer>
+  </body>
+  </html>
